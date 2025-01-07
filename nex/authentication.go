@@ -26,8 +26,8 @@ func StartAuthenticationServer() {
 		request := packet.RMCMessage()
 
 		fmt.Println("==Yo-kai Watch 2- Auth==")
-		fmt.Printf("Protocol ID: %#v\n", request.ProtocolID)
-		fmt.Printf("Method ID: %#v\n", request.MethodID)
+		fmt.Printf("Protocol ID: %d\n", request.ProtocolID)
+		fmt.Printf("Method ID: %d\n", request.MethodID)
 		fmt.Println("===============")
 	})
 
