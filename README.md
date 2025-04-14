@@ -42,14 +42,15 @@ All configuration options are handled via environment variables
 
 `.env` files are supported
 
-| Name                                      | Description                                                                                     | Required                                      |
-|-------------------------------------------|-------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| `PN_YKW2_AUTHENTICATION_SERVER_PORT` | Port for the authentication server                                                              | Yes                                           |
-| `PN_YKW2_SECURE_SERVER_HOST`         | Host name for the secure server (should point to the same address as the authentication server) | Yes                                           |
-| `PN_YKW2_SECURE_SERVER_PORT`         | Port for the secure server                                                                      | Yes                                           |
-| `PN_YKW2_ACCOUNT_GRPC_HOST`          | Host name for your account server gRPC service                                                  | Yes                                           |
-| `PN_YKW2_ACCOUNT_GRPC_PORT`          | Port for your account server gRPC service                                                       | Yes                                           |
-| `PN_YKW2_ACCOUNT_GRPC_API_KEY`       | API key for your account server gRPC service                                                    | No (Assumed to be an open gRPC API)           |
-| `PN_YKW2_FRIENDS_GRPC_HOST`          | Host name for your friends server gRPC service                                                  | Yes                                           |
-| `PN_YKW2_FRIENDS_GRPC_PORT`          | Port for your friends server gRPC service                                                       | Yes                                           |
-| `PN_YKW2_FRIENDS_GRPC_API_KEY`       | API key for your friends server gRPC service                                                    | No (Assumed to be an open gRPC API)           |
+| Name                                 | Description                                                                                                         | Required                                      |
+|--------------------------------------|---------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| `PN_YKW2_POSTGRES_URI`               | Fully qualified URI to your Postgres server (Example `postgres://username:password@localhost/YKW2?sslmode=disable`) | Yes                                           |
+| `PN_YKW2_AUTHENTICATION_SERVER_PORT` | Port for the authentication server                                                                                  | Yes                                           |
+| `PN_YKW2_SECURE_SERVER_HOST`         | Host name for the secure server (should point to the same address as the authentication server)                     | Yes                                           |
+| `PN_YKW2_SECURE_SERVER_PORT`         | Port for the secure server                                                                                          | Yes                                           |
+| `PN_YKW2_ACCOUNT_GRPC_HOST`          | Host name for your account server gRPC service                                                                      | Yes                                           |
+| `PN_YKW2_ACCOUNT_GRPC_PORT`          | Port for your account server gRPC service                                                                           | Yes                                           |
+| `PN_YKW2_ACCOUNT_GRPC_API_KEY`       | API key for your account server gRPC service                                                                        | No (Assumed to be an open gRPC API)           |
+| `PN_YKW2_FRIENDS_GRPC_HOST`          | Host name for your friends server gRPC service                                                                      | Yes                                           |
+| `PN_YKW2_FRIENDS_GRPC_PORT`          | Port for your friends server gRPC service                                                                           | Yes                                           |
+| `PN_YKW2_FRIENDS_GRPC_API_KEY`       | API key for your friends server gRPC service                                                                        | No (Assumed to be an open gRPC API)           |
