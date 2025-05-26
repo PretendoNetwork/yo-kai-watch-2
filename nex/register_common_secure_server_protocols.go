@@ -75,6 +75,7 @@ func registerCommonSecureServerProtocols() {
 	secureProtocol := secure.NewProtocol()
 	globals.SecureEndpoint.RegisterServiceProtocol(secureProtocol)
 	commonSecureProtocol := commonsecure.NewCommonProtocol(secureProtocol)
+	commonSecureProtocol.EnableInsecureRegister()
 
 	globals.MatchmakingManager.GetUserFriendPIDs = globals.GetUserFriendPIDs
 

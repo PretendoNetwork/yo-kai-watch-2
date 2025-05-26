@@ -22,6 +22,7 @@ var AuthenticationEndpoint *nex.PRUDPEndPoint
 
 var SecureServer *nex.PRUDPServer
 var SecureEndpoint *nex.PRUDPEndPoint
+var AESKey []byte
 
 var GRPCAccountClientConnection *grpc.ClientConn
 var GRPCAccountClient pbaccount.AccountClient
