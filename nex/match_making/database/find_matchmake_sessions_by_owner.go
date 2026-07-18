@@ -101,7 +101,7 @@ func FindMatchmakeSessionsByOwner(manager *common_globals.MatchmakingManager, co
 			&resultMatchmakeSession.ApplicationBuffer,
 			&resultMatchmakeSession.ProgressScore,
 			&resultMatchmakeSession.SessionKey,
-			&resultMatchmakeSession.Option,
+			&resultMatchmakeSession.Option0,
 			&resultMatchmakeParam,
 			&resultMatchmakeSession.UserPassword,
 			&resultMatchmakeSession.ReferGID,
