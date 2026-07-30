@@ -13,6 +13,8 @@ import (
 
 var Postgres *sql.DB
 var MatchmakingManager *common_globals.MatchmakingManager
+var MessagingManager *common_globals.MessagingManager
+var UtilityManager *common_globals.UtilityManager
 var Logger *plogger.Logger
 var KerberosPassword = "password" // * Default password
 
