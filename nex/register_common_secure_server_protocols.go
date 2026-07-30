@@ -25,6 +25,7 @@ import (
 	utility "github.com/PretendoNetwork/nex-protocols-go/v2/utility"
 
 	local_match_making "github.com/PretendoNetwork/yo-kai-watch-2/nex/match-making"
+	local_matchmake_extension "github.com/PretendoNetwork/yo-kai-watch-2/nex/matchmake-extension"
 )
 
 func CreateReportDBRecord(_ types.PID, _ types.UInt32, _ types.QBuffer) error {
@@ -61,6 +62,7 @@ func registerCommonSecureServerProtocols() {
 	globals.SecureEndpoint.RegisterServiceProtocol(matchmakeExtensionProtocol)
 	commonMatchmakeExtensionProtocol := commonmatchmakeextension.NewCommonProtocol(matchmakeExtensionProtocol)
 	commonMatchmakeExtensionProtocol.SetManager(globals.MatchmakingManager)
+	matchmakeExtensionProtocol.GetMyBlockList = local_matchmake_extension.GetMyBlockList
 
 	messageDeliveryProtocol := messagedelivery.NewProtocol()
 	globals.SecureEndpoint.RegisterServiceProtocol(messageDeliveryProtocol)
